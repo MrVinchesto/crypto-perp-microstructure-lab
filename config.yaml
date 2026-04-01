@@ -1,0 +1,7 @@
+exchange: binance_futures
+symbol: BTCUSDT
+depth_stream: btcusdt@depth@100ms
+trade_stream: btcusdt@aggTrade
+snapshot_limit: 1000
+collection_seconds: 60
+output_dir: data/raw
