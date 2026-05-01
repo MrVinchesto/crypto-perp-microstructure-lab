@@ -37,11 +37,22 @@ def fetch_snapshot(symbol: str, limit: int) -> dict:
     return resp.json()
 
 
-async def collect_streams(depth_stream: str, trade_stream: str, run_dir: Path, seconds: int) -> None:
+async def collect_streams(config: dict, run_dir: Path) -> None:
+    depth_stream = config["depth_stream"]
+    trade_stream = config["trade_stream"]
+    seconds = config["collection_seconds"]
+
     url = WS_BASE + f"{depth_stream}/{trade_stream}"
 
     depth_path = run_dir / "depth.jsonl"
     trades_path = run_dir / "trades.jsonl"
+
+    # Буферы: сначала открываем stream и начинаем собирать события
+    buffered_depth_events = []
+    buffered_trade_events = []
+
+    snapshot = None
+    snapshot_received = False
 
     start = time.time()
 
@@ -60,22 +71,42 @@ async def collect_streams(depth_stream: str, trade_stream: str, run_dir: Path, s
                     continue
 
                 if "depth" in stream:
-                    depth_file.write(json.dumps(data, ensure_ascii=False) + "\n")
+                    # 1) сначала буферизуем depth updates
+                    if not snapshot_received:
+                        buffered_depth_events.append(data)
+
+                        # как только получили первые depth events, берем snapshot
+                        snapshot = fetch_snapshot(config["symbol"], config["snapshot_limit"])
+                        save_json(run_dir / "snapshot.json", snapshot)
+
+                        meta = {
+                            "symbol": config["symbol"],
+                            "depth_stream": config["depth_stream"],
+                            "trade_stream": config["trade_stream"],
+                            "snapshot_limit": config["snapshot_limit"],
+                            "collection_seconds": config["collection_seconds"],
+                            "snapshot_lastUpdateId": snapshot.get("lastUpdateId"),
+                            "collected_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                        }
+                        save_json(run_dir / "meta.json", meta)
+
+                        # записываем уже забуференные depth events
+                        for event in buffered_depth_events:
+                            depth_file.write(json.dumps(event, ensure_ascii=False) + "\n")
+
+                        # записываем забуференные trades, если уже были
+                        for event in buffered_trade_events:
+                            trades_file.write(json.dumps(event, ensure_ascii=False) + "\n")
+
+                        snapshot_received = True
+                    else:
+                        depth_file.write(json.dumps(data, ensure_ascii=False) + "\n")
+
                 elif "aggTrade" in stream:
-                    trades_file.write(json.dumps(data, ensure_ascii=False) + "\n")
-
-
-def save_meta(run_dir: Path, config: dict, snapshot: dict) -> None:
-    meta = {
-        "symbol": config["symbol"],
-        "depth_stream": config["depth_stream"],
-        "trade_stream": config["trade_stream"],
-        "snapshot_limit": config["snapshot_limit"],
-        "collection_seconds": config["collection_seconds"],
-        "snapshot_lastUpdateId": snapshot.get("lastUpdateId"),
-        "collected_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-    }
-    save_json(run_dir / "meta.json", meta)
+                    if not snapshot_received:
+                        buffered_trade_events.append(data)
+                    else:
+                        trades_file.write(json.dumps(data, ensure_ascii=False) + "\n")
 
 
 async def main():
@@ -83,20 +114,9 @@ async def main():
 
     run_dir = make_run_dir(config["output_dir"], config["symbol"])
     print(f"[INFO] Run dir: {run_dir}")
+    print("[INFO] Opening websocket, buffering events, then fetching snapshot...")
 
-    print("[INFO] Fetching snapshot...")
-    snapshot = fetch_snapshot(config["symbol"], config["snapshot_limit"])
-    save_json(run_dir / "snapshot.json", snapshot)
-
-    save_meta(run_dir, config, snapshot)
-
-    print("[INFO] Collecting websocket data...")
-    await collect_streams(
-        depth_stream=config["depth_stream"],
-        trade_stream=config["trade_stream"],
-        run_dir=run_dir,
-        seconds=config["collection_seconds"],
-    )
+    await collect_streams(config, run_dir)
 
     print("[INFO] Done.")
 
