@@ -61,13 +61,53 @@ def apply_side_updates(side_book: dict, updates: list[list[str]]):
             side_book[p] = q
 
 
-def get_best_bid_ask(bids: dict, asks: dict):
+def get_best_bid_ask_with_qty(bids: dict, asks: dict):
     if not bids or not asks:
-        return None, None
+        return None, None, None, None
 
     best_bid = max(bids.keys())
     best_ask = min(asks.keys())
-    return best_bid, best_ask
+
+    best_bid_qty = bids[best_bid]
+    best_ask_qty = asks[best_ask]
+
+    return best_bid, best_ask, best_bid_qty, best_ask_qty
+
+
+def top_n_depth(book: dict, side: str, n: int) -> Decimal:
+    if side not in {"bid", "ask"}:
+        raise ValueError("side must be either 'bid' or 'ask'")
+
+    if not book:
+        return Decimal("0")
+
+    if side == "bid":
+        prices = sorted(book.keys(), reverse=True)
+    else:
+        prices = sorted(book.keys())
+
+    top_prices = prices[:n]
+    return sum(book[p] for p in top_prices)
+
+
+def safe_imbalance(bid_qty: Decimal, ask_qty: Decimal) -> Decimal | None:
+    denom = bid_qty + ask_qty
+    if denom == 0:
+        return None
+    return (bid_qty - ask_qty) / denom
+
+
+def safe_microprice(
+    best_bid: Decimal,
+    best_ask: Decimal,
+    best_bid_qty: Decimal,
+    best_ask_qty: Decimal,
+) -> Decimal | None:
+    denom = best_bid_qty + best_ask_qty
+    if denom == 0:
+        return None
+
+    return (best_ask * best_bid_qty + best_bid * best_ask_qty) / denom
 
 
 def build_top_of_book(snapshot: dict, depth_events: list[dict]) -> pd.DataFrame:
@@ -108,13 +148,31 @@ def build_top_of_book(snapshot: dict, depth_events: list[dict]) -> pd.DataFrame:
         apply_side_updates(bids, event["b"])
         apply_side_updates(asks, event["a"])
 
-        best_bid, best_ask = get_best_bid_ask(bids, asks)
+        best_bid, best_ask, best_bid_qty, best_ask_qty = get_best_bid_ask_with_qty(bids, asks)
+
         if best_bid is None or best_ask is None:
             prev_u = event["u"]
             continue
 
         spread = best_ask - best_bid
         mid = (best_bid + best_ask) / Decimal("2")
+
+        bid_depth_5 = top_n_depth(bids, side="bid", n=5)
+        ask_depth_5 = top_n_depth(asks, side="ask", n=5)
+
+        bid_depth_10 = top_n_depth(bids, side="bid", n=10)
+        ask_depth_10 = top_n_depth(asks, side="ask", n=10)
+
+        imbalance_1 = safe_imbalance(best_bid_qty, best_ask_qty)
+        imbalance_5 = safe_imbalance(bid_depth_5, ask_depth_5)
+        imbalance_10 = safe_imbalance(bid_depth_10, ask_depth_10)
+
+        microprice = safe_microprice(
+            best_bid=best_bid,
+            best_ask=best_ask,
+            best_bid_qty=best_bid_qty,
+            best_ask_qty=best_ask_qty,
+        )
 
         rows.append(
             {
@@ -125,8 +183,18 @@ def build_top_of_book(snapshot: dict, depth_events: list[dict]) -> pd.DataFrame:
                 "prev_final_update_id": event.get("pu"),
                 "best_bid": float(best_bid),
                 "best_ask": float(best_ask),
+                "best_bid_qty": float(best_bid_qty),
+                "best_ask_qty": float(best_ask_qty),
                 "spread": float(spread),
                 "mid_price": float(mid),
+                "microprice": float(microprice) if microprice is not None else None,
+                "bid_depth_5": float(bid_depth_5),
+                "ask_depth_5": float(ask_depth_5),
+                "bid_depth_10": float(bid_depth_10),
+                "ask_depth_10": float(ask_depth_10),
+                "imbalance_1": float(imbalance_1) if imbalance_1 is not None else None,
+                "imbalance_5": float(imbalance_5) if imbalance_5 is not None else None,
+                "imbalance_10": float(imbalance_10) if imbalance_10 is not None else None,
             }
         )
 
@@ -154,11 +222,30 @@ def main():
     out_path = PROCESSED_BASE / "top_of_book.csv"
     df.to_csv(out_path, index=False)
 
-    print(f"[INFO] Saved top-of-book to: {out_path}")
-    print("[INFO] First rows:")
+    print(f"[INFO] Saved enriched top-of-book to: {out_path}")
+
+    print("\n[INFO] First rows:")
     print(df.head())
-    print("[INFO] Summary:")
-    print(df[["best_bid", "best_ask", "spread", "mid_price"]].describe())
+
+    print("\n[INFO] Summary:")
+    cols = [
+        "best_bid",
+        "best_ask",
+        "spread",
+        "mid_price",
+        "microprice",
+        "best_bid_qty",
+        "best_ask_qty",
+        "bid_depth_5",
+        "ask_depth_5",
+        "imbalance_1",
+        "imbalance_5",
+        "imbalance_10",
+    ]
+    print(df[cols].describe())
+
+    print("\n[INFO] Imbalance signs:")
+    print((df["imbalance_1"] > 0).value_counts())
 
 
 if __name__ == "__main__":
