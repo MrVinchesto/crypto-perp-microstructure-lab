@@ -1,0 +1,13 @@
+signal,target,correlation,n_obs
+imbalance_1,future_mid_return_1e_bps,0.1853456618540211,554
+imbalance_1,future_mid_return_5e_bps,0.26327457814864846,550
+imbalance_1,future_mid_return_10e_bps,0.3019942296394799,545
+imbalance_5,future_mid_return_1e_bps,0.19179995352352094,554
+imbalance_5,future_mid_return_5e_bps,0.2745065974210806,550
+imbalance_5,future_mid_return_10e_bps,0.3183913722708093,545
+imbalance_10,future_mid_return_1e_bps,0.19050531891899744,554
+imbalance_10,future_mid_return_5e_bps,0.27360376742226516,550
+imbalance_10,future_mid_return_10e_bps,0.3159650393746079,545
+microprice_deviation_bps,future_mid_return_1e_bps,0.23910554098635212,554
+microprice_deviation_bps,future_mid_return_5e_bps,0.27825895874254614,550
+microprice_deviation_bps,future_mid_return_10e_bps,0.30855884486750806,545
