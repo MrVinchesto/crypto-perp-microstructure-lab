@@ -3,3 +3,4 @@ websockets
 PyYAML
 pandas
 matplotlib
+scikit-learn
