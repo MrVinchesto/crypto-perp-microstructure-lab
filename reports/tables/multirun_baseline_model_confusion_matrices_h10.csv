@@ -1,0 +1,7 @@
+model,true_label,pred_down,pred_up
+majority_baseline,true_down,535,0
+majority_baseline,true_up,666,0
+logit_signal,true_down,342,193
+logit_signal,true_up,246,420
+logit_full,true_down,343,191
+logit_full,true_up,238,428
