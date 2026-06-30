@@ -1,0 +1,8 @@
+model,test_runs_with_signals,max_run_signal_share,positive_run_share,min_run_mean_signed_return_bps,max_run_mean_signed_return_bps,all_runs_positive
+xgboost_dynamic_full,3,0.4369747899159664,1.0,2.6286441474427042,4.430688120421559,True
+hist_gradient_boosting_dynamic_full,3,0.3656716417910448,1.0,2.426841673339053,2.8171119072055353,True
+lightgbm_dynamic_full,3,0.44166666666666665,1.0,2.175094301417035,3.826504456432373,True
+xgboost_dynamic_compact,3,0.5,1.0,2.085445909805913,4.040427586542173,True
+lightgbm_dynamic_compact,3,0.4752475247524752,1.0,1.9708173496427661,4.345293549250783,True
+hist_gradient_boosting_static_full,3,0.36893203883495146,1.0,1.845597520369469,4.171647171175985,True
+logit_dynamic_compact,3,0.4527027027027027,1.0,0.9757562078332755,2.03526045768265,True
