@@ -1,0 +1,15 @@
+evaluation_method,model,test_runs_with_trades_or_episodes,max_run_share,positive_run_share,min_run_mean_signed_return_bps,max_run_mean_signed_return_bps,all_runs_positive
+cooldown_first_signal,lightgbm_dynamic_compact,3,0.4166666666666667,1.0,2.0251984713126614,4.064514014131548,True
+cooldown_first_signal,xgboost_dynamic_compact,3,0.4166666666666667,1.0,1.707487855058994,2.3100559849762448,True
+cooldown_first_signal,hist_gradient_boosting_dynamic_full,3,0.47058823529411764,1.0,1.605008557657439,2.940111623099151,True
+cooldown_first_signal,lightgbm_dynamic_full,3,0.46153846153846156,1.0,1.3027813915004554,2.0059125219651364,True
+cooldown_first_signal,xgboost_dynamic_full,3,0.45454545454545453,1.0,1.170429229119252,2.102845636327011,True
+cooldown_first_signal,hist_gradient_boosting_static_full,3,0.45454545454545453,1.0,0.7145168055811002,2.6784758784168528,True
+cooldown_first_signal,logit_dynamic_compact,3,0.391304347826087,0.6666666666666666,-0.6715569253918601,1.6982436329206054,False
+episode_first_signal,hist_gradient_boosting_dynamic_full,3,0.46153846153846156,1.0,1.663775850397527,2.9115349111186184,True
+episode_first_signal,hist_gradient_boosting_static_full,3,0.5,1.0,0.7145168055811002,2.4879612333121117,True
+episode_first_signal,logit_dynamic_compact,3,0.4090909090909091,1.0,0.5343117248557405,2.4281733739783817,True
+episode_first_signal,xgboost_dynamic_full,3,0.5,1.0,0.2099651054132678,2.38526363874092,True
+episode_first_signal,lightgbm_dynamic_compact,3,0.4444444444444444,1.0,0.08993926555456189,4.064514014131548,True
+episode_first_signal,xgboost_dynamic_compact,3,0.5,0.6666666666666666,-0.3866266588259393,2.445007907153999,False
+episode_first_signal,lightgbm_dynamic_full,3,0.5555555555555556,0.6666666666666666,-2.567611757724464,2.30771714725142,False
