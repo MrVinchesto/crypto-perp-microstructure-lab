@@ -1,0 +1,9 @@
+evaluation_method,model,test_runs_with_signals_or_trades,max_run_share,positive_run_share,min_run_mean_signed_return_bps,max_run_mean_signed_return_bps,all_runs_positive
+cooldown_first_signal,logit_dynamic_compact,12,0.10050251256281408,1.0,0.18403701329955396,1.8712738980860815,True
+cooldown_first_signal,lightgbm_dynamic_compact,12,0.08695652173913043,0.75,-0.43119378342506476,0.6670550312139772,False
+cooldown_first_signal,hist_gradient_boosting_dynamic_full,12,0.08602150537634409,0.75,-0.4582539677745445,0.7115510224904144,False
+cooldown_first_signal,xgboost_dynamic_full,12,0.08602150537634409,0.6666666666666666,-0.4915524690359829,0.7918534484030665,False
+raw_selected_signal,logit_dynamic_compact,12,0.14215686274509803,0.8333333333333334,-0.10725279675380514,1.9383894518626075,False
+raw_selected_signal,xgboost_dynamic_full,12,0.09200865600123657,0.6666666666666666,-0.5406472632178705,0.8255552341589548,False
+raw_selected_signal,lightgbm_dynamic_compact,12,0.09357257632565613,0.6666666666666666,-0.6390649840073197,0.7700384965259548,False
+raw_selected_signal,hist_gradient_boosting_dynamic_full,12,0.09368775854144323,0.5833333333333334,-0.6350031555331076,0.7642692221035772,False
