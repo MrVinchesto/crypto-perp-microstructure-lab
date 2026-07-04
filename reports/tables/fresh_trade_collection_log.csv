@@ -1,0 +1,505 @@
+collection_batch,run_number,status,run_name,symbol,collection_seconds_requested,collection_seconds_meta,depth_events,trade_events,snapshot_lastUpdateId,started_at_utc,finished_at_utc,error_message,stdout_tail,stderr_tail
+fresh_trades_large_day25,1,success,20260704_125643,BTCUSDT,300,300,2926,1465,10964353693084,2026-07-04T07:56:42.894201+00:00,2026-07-04T08:01:51.968585+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_125643
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964353693084
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 1465
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_125643\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1465
+[INFO] Meta: data\raw\BTCUSDT\20260704_125643\meta.json
+",
+fresh_trades_large_day25,2,success,20260704_130157,BTCUSDT,300,300,2927,1079,10964374604061,2026-07-04T08:01:56.983674+00:00,2026-07-04T08:07:06.034799+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_130157
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964374604061
+[INFO] Depth collection finished. Events: 2927
+[INFO] Trade collection finished. Events: 1079
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_130157\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 1079
+[INFO] Meta: data\raw\BTCUSDT\20260704_130157\meta.json
+",
+fresh_trades_large_day25,3,success,20260704_130711,BTCUSDT,300,300,2926,1056,10964396422937,2026-07-04T08:07:11.053042+00:00,2026-07-04T08:12:19.950599+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_130711
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964396422937
+[INFO] Trade collection finished. Events: 1056
+[INFO] Depth collection finished. Events: 2926
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_130711\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1056
+[INFO] Meta: data\raw\BTCUSDT\20260704_130711\meta.json
+",
+fresh_trades_large_day25,4,success,20260704_131225,BTCUSDT,300,300,2926,1226,10964418025886,2026-07-04T08:12:24.967661+00:00,2026-07-04T08:17:35.255918+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_131225
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964418025886
+[INFO] Trade collection finished. Events: 1226
+[INFO] Depth collection finished. Events: 2926
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_131225\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1226
+[INFO] Meta: data\raw\BTCUSDT\20260704_131225\meta.json
+",
+fresh_trades_large_day25,5,success,20260704_131740,BTCUSDT,300,300,2926,1226,10964442604954,2026-07-04T08:17:40.273657+00:00,2026-07-04T08:22:49.326395+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_131740
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964442604954
+[INFO] Trade collection finished. Events: 1226
+[INFO] Depth collection finished. Events: 2926
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_131740\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1226
+[INFO] Meta: data\raw\BTCUSDT\20260704_131740\meta.json
+",
+fresh_trades_large_day25,6,success,20260704_132254,BTCUSDT,300,300,2927,1051,10964466485059,2026-07-04T08:22:54.343608+00:00,2026-07-04T08:28:02.714601+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_132254
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964466485059
+[INFO] Depth collection finished. Events: 2927
+[INFO] Trade collection finished. Events: 1051
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_132254\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 1051
+[INFO] Meta: data\raw\BTCUSDT\20260704_132254\meta.json
+",
+fresh_trades_large_day25,7,success,20260704_132808,BTCUSDT,300,300,2927,928,10964489095166,2026-07-04T08:28:07.731144+00:00,2026-07-04T08:33:16.663398+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_132808
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964489095166
+[INFO] Trade collection finished. Events: 928
+[INFO] Depth collection finished. Events: 2927
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_132808\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 928
+[INFO] Meta: data\raw\BTCUSDT\20260704_132808\meta.json
+",
+fresh_trades_large_day25,8,success,20260704_133321,BTCUSDT,300,300,2914,2037,10964513385338,2026-07-04T08:33:21.680957+00:00,2026-07-04T08:38:29.242248+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_133321
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964513385338
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Trade collection finished. Events: 2037
+[INFO] Depth collection finished. Events: 2914
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_133321\snapshot.json
+[INFO] Depth events: 2914
+[INFO] Trade events: 2037
+[INFO] Meta: data\raw\BTCUSDT\20260704_133321\meta.json
+",
+fresh_trades_large_day25,9,success,20260704_133834,BTCUSDT,300,300,2926,6230,10964540819466,2026-07-04T08:38:34.259990+00:00,2026-07-04T08:43:44.402158+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_133834
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964540819466
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 6230
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_133834\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 6230
+[INFO] Meta: data\raw\BTCUSDT\20260704_133834\meta.json
+",
+fresh_trades_large_day25,10,success,20260704_134349,BTCUSDT,300,300,2926,1423,10964569190250,2026-07-04T08:43:49.419757+00:00,2026-07-04T08:48:58.058177+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_134349
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964569190250
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 1423
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_134349\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1423
+[INFO] Meta: data\raw\BTCUSDT\20260704_134349\meta.json
+",
+fresh_trades_large_day25,11,success,20260704_134903,BTCUSDT,300,300,2926,1413,10964594111810,2026-07-04T08:49:03.076408+00:00,2026-07-04T08:54:13.341805+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_134903
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964594111810
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 1413
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_134903\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1413
+[INFO] Meta: data\raw\BTCUSDT\20260704_134903\meta.json
+",
+fresh_trades_large_day25,12,success,20260704_135418,BTCUSDT,300,300,2927,2063,10964618107948,2026-07-04T08:54:18.358479+00:00,2026-07-04T08:59:24.469671+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_135418
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964618107948
+[INFO] Trade collection finished. Events: 2063
+[INFO] Depth collection finished. Events: 2927
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_135418\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 2063
+[INFO] Meta: data\raw\BTCUSDT\20260704_135418\meta.json
+",
+fresh_trades_large_day25,13,success,20260704_135929,BTCUSDT,300,300,2927,3011,10964641955324,2026-07-04T08:59:29.487627+00:00,2026-07-04T09:04:39.778012+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_135929
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964641955324
+[INFO] Depth collection finished. Events: 2927
+[INFO] Trade collection finished. Events: 3011
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_135929\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 3011
+[INFO] Meta: data\raw\BTCUSDT\20260704_135929\meta.json
+",
+fresh_trades_large_day25,14,success,20260704_140444,BTCUSDT,300,300,2926,2853,10964672594321,2026-07-04T09:04:44.796543+00:00,2026-07-04T09:09:54.814683+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_140444
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964672594321
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 2853
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_140444\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 2853
+[INFO] Meta: data\raw\BTCUSDT\20260704_140444\meta.json
+",
+fresh_trades_large_day25,15,success,20260704_141000,BTCUSDT,300,300,2926,1746,10964700392332,2026-07-04T09:09:59.832878+00:00,2026-07-04T09:15:10.191191+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_141000
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964700392332
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 1746
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_141000\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1746
+[INFO] Meta: data\raw\BTCUSDT\20260704_141000\meta.json
+",
+fresh_trades_large_day25,16,success,20260704_141515,BTCUSDT,300,300,2927,1227,10964726199978,2026-07-04T09:15:15.209355+00:00,2026-07-04T09:20:22.965904+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_141515
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964726199978
+[INFO] Trade collection finished. Events: 1227
+[INFO] Depth collection finished. Events: 2927
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_141515\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 1227
+[INFO] Meta: data\raw\BTCUSDT\20260704_141515\meta.json
+",
+fresh_trades_large_day25,17,success,20260704_142028,BTCUSDT,300,300,2927,1921,10964749577979,2026-07-04T09:20:27.983528+00:00,2026-07-04T09:25:36.190538+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_142028
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964749577979
+[INFO] Depth collection finished. Events: 2927
+[INFO] Trade collection finished. Events: 1921
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_142028\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 1921
+[INFO] Meta: data\raw\BTCUSDT\20260704_142028\meta.json
+",
+fresh_trades_large_day25,18,success,20260704_142541,BTCUSDT,300,300,2926,1366,10964774974475,2026-07-04T09:25:41.209408+00:00,2026-07-04T09:30:51.518836+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_142541
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964774974475
+[INFO] Trade collection finished. Events: 1366
+[INFO] Depth collection finished. Events: 2926
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_142541\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1366
+[INFO] Meta: data\raw\BTCUSDT\20260704_142541\meta.json
+",
+fresh_trades_large_day25,19,success,20260704_143056,BTCUSDT,300,300,2926,1526,10964799049248,2026-07-04T09:30:56.537204+00:00,2026-07-04T09:36:04.712724+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_143056
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964799049248
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 1526
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_143056\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1526
+[INFO] Meta: data\raw\BTCUSDT\20260704_143056\meta.json
+",
+fresh_trades_large_day25,20,success,20260704_143609,BTCUSDT,300,300,2927,2384,10964827768091,2026-07-04T09:36:09.729679+00:00,2026-07-04T09:41:19.507698+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_143609
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964827768091
+[INFO] Depth collection finished. Events: 2927
+[INFO] Trade collection finished. Events: 2384
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_143609\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 2384
+[INFO] Meta: data\raw\BTCUSDT\20260704_143609\meta.json
+",
+fresh_trades_large_day25,21,success,20260704_144124,BTCUSDT,300,300,2927,1452,10964857510390,2026-07-04T09:41:24.526541+00:00,2026-07-04T09:46:33.435874+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_144124
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964857510390
+[INFO] Trade collection finished. Events: 1452
+[INFO] Depth collection finished. Events: 2927
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_144124\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 1452
+[INFO] Meta: data\raw\BTCUSDT\20260704_144124\meta.json
+",
+fresh_trades_large_day25,22,success,20260704_144638,BTCUSDT,300,300,2927,1627,10964881901222,2026-07-04T09:46:38.453871+00:00,2026-07-04T09:51:45.679479+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_144638
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964881901222
+[INFO] Depth collection finished. Events: 2927
+[INFO] Trade collection finished. Events: 1627
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_144638\snapshot.json
+[INFO] Depth events: 2927
+[INFO] Trade events: 1627
+[INFO] Meta: data\raw\BTCUSDT\20260704_144638\meta.json
+",
+fresh_trades_large_day25,23,success,20260704_145150,BTCUSDT,300,300,2926,1403,10964907180229,2026-07-04T09:51:50.698148+00:00,2026-07-04T09:56:59.726335+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_145150
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964907180229
+[INFO] Depth collection finished. Events: 2926
+[INFO] Trade collection finished. Events: 1403
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_145150\snapshot.json
+[INFO] Depth events: 2926
+[INFO] Trade events: 1403
+[INFO] Meta: data\raw\BTCUSDT\20260704_145150\meta.json
+",
+fresh_trades_large_day25,24,success,20260704_145704,BTCUSDT,300,300,2925,1020,10964931185993,2026-07-04T09:57:04.745253+00:00,2026-07-04T10:02:15.027062+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260704_145704
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 10964931185993
+[INFO] Trade collection finished. Events: 1020
+[INFO] Depth collection finished. Events: 2925
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260704_145704\snapshot.json
+[INFO] Depth events: 2925
+[INFO] Trade events: 1020
+[INFO] Meta: data\raw\BTCUSDT\20260704_145704\meta.json
+",
