@@ -1,0 +1,10 @@
+model,feature_set,horizon,threshold,validation_raw_signals,validation_cooldown_trades,validation_precision,validation_mean_signed_return_bps,validation_positive_signed_return_share,meets_min_trades,selection_reason
+logit_book_only_h10,book_only,10,0.9,1026,138,0.9347826086956522,0.3754079210610952,0.9347826086956522,True,best_validation_edge_with_min_trades
+logit_trade_flow_only_h10,trade_flow_only,10,0.9,40,12,1.0,0.5308355675868551,1.0,True,best_validation_edge_with_min_trades
+logit_combined_h10,combined,10,0.9,1031,141,0.9361702127659575,0.3633246956302423,0.9361702127659575,True,best_validation_edge_with_min_trades
+logit_book_only_h20,book_only,20,0.9,1444,116,0.9051724137931034,0.46496772971725214,0.9051724137931034,True,best_validation_edge_with_min_trades
+logit_trade_flow_only_h20,trade_flow_only,20,0.85,41,13,1.0,0.6340699655703864,1.0,True,best_validation_edge_with_min_trades
+logit_combined_h20,combined,20,0.9,1354,119,0.907563025210084,0.41542156001790764,0.907563025210084,True,best_validation_edge_with_min_trades
+logit_book_only_h50,book_only,50,0.9,730,61,0.9344262295081968,0.6472296426028886,0.9344262295081968,True,best_validation_edge_with_min_trades
+logit_trade_flow_only_h50,trade_flow_only,50,0.75,68,18,0.8333333333333334,0.5486691934974974,0.8333333333333334,True,best_validation_edge_with_min_trades
+logit_combined_h50,combined,50,0.9,964,70,0.9,0.6120275100069009,0.9,True,best_validation_edge_with_min_trades
