@@ -1,0 +1,10 @@
+metric,value
+n_large_runs,24
+n_rows,69904
+first_run,20260704_125643
+last_run,20260704_145704
+mean_rows_per_run,2912.6666666666665
+mean_spread_bps,0.016068084502169233
+share_rows_with_trades,0.25680933852140075
+total_trade_count_assigned,42732.0
+total_trade_volume_assigned,4557.421
