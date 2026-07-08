@@ -15,7 +15,7 @@ RAW_ROOT = Path("data/raw/BTCUSDT")
 TABLES_DIR = Path("reports/tables")
 LOG_PATH = TABLES_DIR / "fresh_trade_collection_log.csv"
 
-COLLECTION_BATCH = "weekday_active_tue_day28"
+COLLECTION_BATCH = "weekday_active_tue_day29"
 
 SYMBOL = "BTCUSDT"
 SYMBOL_LOWER = SYMBOL.lower()
