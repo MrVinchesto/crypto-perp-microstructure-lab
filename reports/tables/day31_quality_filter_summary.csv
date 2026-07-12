@@ -1,0 +1,5 @@
+collection_batch,regime,log_rows,successful_300s_runs,depth_and_trade_quality_runs,strict_processed_runs,excluded_runs
+fresh_trades_large_day25,Saturday Day 25,24,24,24,24,0
+weekday_active_tue_day28,Tuesday Day 28,36,36,36,36,0
+weekday_active_wed_day29,Wednesday Day 29,36,36,36,36,0
+weekday_active_thu_day30,Thursday Day 30,37,36,35,34,3

@@ -1,0 +1,4 @@
+collection_batch,regime,run_name,status,depth_events,trade_events,collection_seconds_requested,available_in_trade_flow_features,exclusion_reason
+weekday_active_thu_day30,Thursday Day 30,20260709_185957,failed,,,300,False,collection_failed;low_or_missing_depth;no_trades;missing_processed_features
+weekday_active_thu_day30,Thursday Day 30,20260709_191110,success,2419.0,9160.0,300,True,low_or_missing_depth
+weekday_active_thu_day30,Thursday Day 30,20260709_191626,success,2904.0,15224.0,300,False,missing_processed_features
