@@ -1,0 +1,3 @@
+candidate_id,move_feature_set,n_features,C,selected_move_threshold,selected_direction_threshold,validation_n_signals,validation_n_signal_runs,validation_mean_net_return_bps,n_signals,n_signal_runs,coverage,directional_precision,mean_signed_return_bps,median_signed_return_bps,mean_net_return_bps,median_net_return_bps,selection_score
+full_trade_flow_C_0p03,full_trade_flow,48,0.03,0.65,0.65,48,18,0.2336517677166703,20,14,0.00020553717139744723,0.7,2.6100602539173017,2.140142419371771,1.6100602539173017,1.140142419371771,0.2336517677166703
+reduced_trade_flow_C_0p03,reduced_trade_flow,14,0.03,0.5,0.7,48,21,0.012220282495858973,24,14,0.0002466446056769367,0.6666666666666666,1.0508517438148621,0.9691245807019744,0.05085174381486235,-0.03087541929802562,0.012220282495858973
