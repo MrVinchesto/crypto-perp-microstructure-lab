@@ -576,7 +576,15 @@ def calculate_correlation_diagnostics(
     pd.DataFrame,
 ]:
     """
-    Measure pairwise feature correlation in the Tuesday training data.
+    Calculate pairwise absolute correlations between features.
+
+    Only unique feature pairs are included:
+    - the diagonal is excluded;
+    - duplicate reversed pairs are excluded.
+
+    For p features, the number of unique pairs must equal:
+
+        p * (p - 1) / 2
     """
     correlation_matrix = (
         data[features]
@@ -584,36 +592,51 @@ def calculate_correlation_diagnostics(
         .abs()
     )
 
-    upper_triangle_mask = np.triu(
-        np.ones(
-            correlation_matrix.shape,
-            dtype=bool,
-        ),
-        k=1,
+    correlation_values = (
+        correlation_matrix.to_numpy()
     )
 
-    correlation_pairs = (
-        correlation_matrix
-        .where(upper_triangle_mask)
-        .stack()
-        .reset_index()
+    # Get indices of the upper triangle above the diagonal.
+    # k=1 excludes correlations of each feature with itself.
+    row_indices, column_indices = (
+        np.triu_indices_from(
+            correlation_values,
+            k=1,
+        )
     )
 
-    correlation_pairs.columns = [
-        "feature_1",
-        "feature_2",
-        "absolute_correlation",
-    ]
+    correlation_pairs = pd.DataFrame(
+        {
+            "feature_1": (
+                correlation_matrix
+                .index
+                .to_numpy()[row_indices]
+            ),
+            "feature_2": (
+                correlation_matrix
+                .columns
+                .to_numpy()[column_indices]
+            ),
+            "absolute_correlation": (
+                correlation_values[
+                    row_indices,
+                    column_indices,
+                ]
+            ),
+        }
+    )
 
     correlation_pairs[
         "feature_set"
     ] = feature_set_name
 
     correlation_pairs = (
-        correlation_pairs.sort_values(
+        correlation_pairs
+        .sort_values(
             "absolute_correlation",
             ascending=False,
         )
+        .reset_index(drop=True)
     )
 
     correlations = correlation_pairs[
@@ -623,9 +646,13 @@ def calculate_correlation_diagnostics(
     summary = {
         "feature_set": feature_set_name,
         "n_features": len(features),
+
+        # This now contains the actual number of unique pairs:
+        # p * (p - 1) / 2.
         "n_feature_pairs": len(
             correlation_pairs
         ),
+
         "mean_absolute_correlation": float(
             correlations.mean()
         ),

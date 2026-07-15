@@ -57,8 +57,6 @@ event_gap_ms,imbalance_1,0.0055162026451253746,reduced_book
 event_gap_ms,best_ask_qty,0.0051197578950831395,reduced_book
 spread_bps,imbalance_1,0.00438353371162068,reduced_book
 spread_bps,imbalance_5,0.0008314122927270255,reduced_book
-spread_bps,spread_bps,,reduced_book
-event_gap_ms,spread_bps,,reduced_book
 trade_imbalance,notional_imbalance,0.9999999999949835,full_trade_flow
 trade_imbalance_rolling_5e,notional_imbalance_rolling_5e,0.9999999999489284,full_trade_flow
 trade_imbalance_rolling_10e,notional_imbalance_rolling_10e,0.9999999998470234,full_trade_flow
