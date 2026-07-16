@@ -1,0 +1,4 @@
+fold_name,train_description,evaluation_description,n_train_runs,n_evaluation_runs,first_train_run,last_train_run,first_evaluation_run,last_evaluation_run
+fold_1_tuesday_late,first half of strict Tuesday runs,second half of strict Tuesday runs,18,18,20260707_185956,20260707_202905,20260707_203420,20260707_220321
+fold_2_wednesday_early,all strict Tuesday runs,first half of strict Wednesday runs,36,18,20260707_185956,20260707_220321,20260708_185955,20260708_202857
+fold_3_wednesday_late,all Tuesday plus first half of Wednesday,second half of strict Wednesday runs,54,18,20260707_185956,20260708_202857,20260708_203410,20260708_220311
