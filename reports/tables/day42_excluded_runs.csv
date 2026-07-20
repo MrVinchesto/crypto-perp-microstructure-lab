@@ -1,0 +1,87 @@
+collection_batch,run_number,status,run_name,symbol,collection_seconds_requested,collection_seconds_meta,depth_events,trade_events,snapshot_lastUpdateId,started_at_utc,finished_at_utc,error_message,stdout_tail,stderr_tail,processed_rows,status_ok,duration_ok,depth_ok,trades_ok,processed_ok,strict_quality_ok,exclusion_reason
+weekday_active_thu_day30,1,failed,20260709_185957,BTCUSDT,300,,,,,2026-07-09T13:59:57.025510+00:00,2026-07-09T14:00:08.582494+00:00,"Command '['C:\\Users\\Mr_Vinchesto\\Documents\\projects\\crypto-perp-microstructure-lab\\.venv\\Scripts\\python.exe', 'scripts\\collect_raw_with_trades.py']' returned non-zero exit status 1.","================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260709_185957
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Depth websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 11008728883581
+","рвано локальной системой
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File ""C:\Users\Mr_Vinchesto\Documents\projects\crypto-perp-microstructure-lab\scripts\collect_raw_with_trades.py"", line 243, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Mr_Vinchesto\Documents\projects\crypto-perp-microstructure-lab\scripts\collect_raw_with_trades.py"", line 239, in main
+    asyncio.run(collect_raw_with_trades())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Mr_Vinchesto\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py"", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File ""C:\Users\Mr_Vinchesto\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py"", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File ""C:\Users\Mr_Vinchesto\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py"", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File ""C:\Users\Mr_Vinchesto\Documents\projects\crypto-perp-microstructure-lab\scripts\collect_raw_with_trades.py"", line 189, in collect_raw_with_trades
+    await asyncio.gather(depth_task, trade_task)
+  File ""C:\Users\Mr_Vinchesto\Documents\projects\crypto-perp-microstructure-lab\scripts\collect_raw_with_trades.py"", line 106, in collect_trade_events
+    message = await asyncio.wait_for(ws.recv(), timeout=timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Mr_Vinchesto\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py"", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File ""C:\Users\Mr_Vinchesto\Documents\projects\crypto-perp-microstructure-lab\.venv\Lib\site-packages\websockets\asyncio\connection.py"", line 324, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+",0,False,False,False,False,False,False,status_not_success;duration_below_295;depth_below_2500;no_trades;processed_rows_below_2500_or_missing
+weekday_active_thu_day30,3,success,20260709_191110,BTCUSDT,300,300.0,2419.0,9160.0,11008824145199.0,2026-07-09T14:11:10.785020+00:00,2026-07-09T14:16:21.155933+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260709_191110
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Depth websocket connected
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 11008824145199
+[INFO] Depth collection finished. Events: 2419
+[INFO] Trade collection finished. Events: 9160
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260709_191110\snapshot.json
+[INFO] Depth events: 2419
+[INFO] Trade events: 9160
+[INFO] Meta: data\raw\BTCUSDT\20260709_191110\meta.json
+",,2407,True,True,False,True,False,False,depth_below_2500;processed_rows_below_2500_or_missing
+weekday_active_thu_day30,4,success,20260709_191626,BTCUSDT,300,300.0,2904.0,15224.0,11008871730330.0,2026-07-09T14:16:26.262261+00:00,2026-07-09T14:21:34.469638+00:00,,"================================================================================
+[INFO] Starting raw collection with separate depth/trade websockets
+[INFO] Symbol: BTCUSDT
+[INFO] Collection seconds: 300
+[INFO] Run dir: data\raw\BTCUSDT\20260709_191626
+================================================================================
+[INFO] Connecting depth websocket: wss://fstream.binance.com/public/stream?streams=btcusdt@depth@100ms
+[INFO] Connecting trade websocket: wss://fstream.binance.com/market/stream?streams=btcusdt@aggTrade
+[INFO] Trade websocket connected
+[INFO] Fetching snapshot from: https://fapi.binance.com/fapi/v1/depth
+[INFO] Snapshot lastUpdateId: 11008871730330
+[INFO] Depth websocket connected
+[INFO] Depth collection finished. Events: 2904
+[INFO] Trade collection finished. Events: 15224
+
+[INFO] Raw collection completed
+[INFO] Snapshot: data\raw\BTCUSDT\20260709_191626\snapshot.json
+[INFO] Depth events: 2904
+[INFO] Trade events: 15224
+[INFO] Meta: data\raw\BTCUSDT\20260709_191626\meta.json
+",,0,True,True,True,True,False,False,processed_rows_below_2500_or_missing
