@@ -1,0 +1,3 @@
+direction_label,n_signals,n_signal_runs,directional_precision,mean_signed_return_bps,median_signed_return_bps,mean_net_return_bps,median_net_return_bps,total_net_return_bps
+DOWN_SHORT,20,15,0.65,1.0504618684153422,0.32970067367577016,0.05046186841534217,-0.6702993263242298,1.0092373683068434
+UP_LONG,10,7,0.7,0.5566297137243881,1.224793430525395,-0.4433702862756119,0.2247934305253949,-4.433702862756119

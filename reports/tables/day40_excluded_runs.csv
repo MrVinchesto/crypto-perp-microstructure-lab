@@ -1,0 +1,1 @@
+collection_batch,run_number,status,run_name,symbol,collection_seconds_requested,collection_seconds_meta,depth_events,trade_events,snapshot_lastUpdateId,started_at_utc,finished_at_utc,error_message,stdout_tail,stderr_tail,processed_rows,status_ok,duration_seconds_used,duration_ok,depth_ok,trades_ok,processed_ok,strict_quality_ok,exclusion_reason
