@@ -1,0 +1,11 @@
+criterion,value,required,passed,role,final_decision
+At least 2 of 3 chronological folds are positive,2.0,>= 2,True,hard_eligibility,FREEZE_PROVISIONAL_CANDIDATE
+Median fold mean net is positive,0.1022316676986469,> 0,True,hard_eligibility,FREEZE_PROVISIONAL_CANDIDATE
+Pooled weighted mean net is positive,0.10436065478369078,> 0,True,hard_eligibility,FREEZE_PROVISIONAL_CANDIDATE
+At least 100 chronological OOS signals,225.0,>= 100,True,hard_eligibility,FREEZE_PROVISIONAL_CANDIDATE
+At least 40 signal-bearing runs,68.0,>= 40,True,hard_eligibility,FREEZE_PROVISIONAL_CANDIDATE
+Mean net remains positive without best signal,0.05713730488097427,> 0,True,robustness_diagnostic,FREEZE_PROVISIONAL_CANDIDATE
+Mean net remains positive without best run,0.03440870468838196,> 0,True,robustness_diagnostic,FREEZE_PROVISIONAL_CANDIDATE
+Mean net remains positive after removing any one fold,-0.12560426772183708,> 0,False,robustness_diagnostic,FREEZE_PROVISIONAL_CANDIDATE
+Run-cluster bootstrap positive share is at least 75%,0.6839,>= 0.75,False,robustness_diagnostic,FREEZE_PROVISIONAL_CANDIDATE
+Run-cluster bootstrap 95% lower bound is positive,-0.32736622246332686,> 0,False,strong_evidence,FREEZE_PROVISIONAL_CANDIDATE
