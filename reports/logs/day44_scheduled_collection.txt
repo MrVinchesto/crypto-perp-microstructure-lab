@@ -1,0 +1,429 @@
+================================================== 
+[START] 21.07.2026 19:00:00,44 
+================================================================================
+[INFO] Starting multi-run collection with trades
+[INFO] Batch: weekday_active_final_holdout_day44
+[INFO] Runs: 36
+[INFO] Seconds per run: 300
+[INFO] Pause between runs: 5
+================================================================================
+[INFO] Backed up config to: config.yaml.day25_backup
+[INFO] Updated config.yaml for batch collection
+[INFO] symbol: BTCUSDT
+[INFO] depth_stream: btcusdt@depth@100ms
+[INFO] trade_stream: btcusdt@aggTrade
+[INFO] collection_seconds: 300
+
+================================================================================
+[INFO] Starting run 1/36
+================================================================================
+[INFO] Run 1 status: success
+[INFO] Run name: 20260721_190001
+[INFO] Depth events: 2932
+[INFO] Trade events: 10802
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 2/36
+================================================================================
+[INFO] Run 2 status: success
+[INFO] Run name: 20260721_190515
+[INFO] Depth events: 2931
+[INFO] Trade events: 13913
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 3/36
+================================================================================
+[INFO] Run 3 status: success
+[INFO] Run name: 20260721_191028
+[INFO] Depth events: 2931
+[INFO] Trade events: 7632
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 4/36
+================================================================================
+[INFO] Run 4 status: success
+[INFO] Run name: 20260721_191543
+[INFO] Depth events: 2931
+[INFO] Trade events: 8286
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 5/36
+================================================================================
+[INFO] Run 5 status: success
+[INFO] Run name: 20260721_192058
+[INFO] Depth events: 2932
+[INFO] Trade events: 10693
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 6/36
+================================================================================
+[INFO] Run 6 status: success
+[INFO] Run name: 20260721_192612
+[INFO] Depth events: 2932
+[INFO] Trade events: 6913
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 7/36
+================================================================================
+[INFO] Run 7 status: success
+[INFO] Run name: 20260721_193127
+[INFO] Depth events: 2932
+[INFO] Trade events: 6157
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 8/36
+================================================================================
+[INFO] Run 8 status: success
+[INFO] Run name: 20260721_193642
+[INFO] Depth events: 2932
+[INFO] Trade events: 5149
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 9/36
+================================================================================
+[INFO] Run 9 status: success
+[INFO] Run name: 20260721_194157
+[INFO] Depth events: 2932
+[INFO] Trade events: 5993
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 10/36
+================================================================================
+[INFO] Run 10 status: success
+[INFO] Run name: 20260721_194712
+[INFO] Depth events: 2933
+[INFO] Trade events: 6891
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 11/36
+================================================================================
+[INFO] Run 11 status: success
+[INFO] Run name: 20260721_195226
+[INFO] Depth events: 2932
+[INFO] Trade events: 3463
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 12/36
+================================================================================
+[INFO] Run 12 status: success
+[INFO] Run name: 20260721_195738
+[INFO] Depth events: 2933
+[INFO] Trade events: 6339
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 13/36
+================================================================================
+[INFO] Run 13 status: success
+[INFO] Run name: 20260721_200254
+[INFO] Depth events: 2932
+[INFO] Trade events: 6910
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 14/36
+================================================================================
+[INFO] Run 14 status: success
+[INFO] Run name: 20260721_200807
+[INFO] Depth events: 2932
+[INFO] Trade events: 5645
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 15/36
+================================================================================
+[INFO] Run 15 status: success
+[INFO] Run name: 20260721_201321
+[INFO] Depth events: 2931
+[INFO] Trade events: 4945
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 16/36
+================================================================================
+[INFO] Run 16 status: success
+[INFO] Run name: 20260721_201837
+[INFO] Depth events: 2925
+[INFO] Trade events: 4781
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 17/36
+================================================================================
+[INFO] Run 17 status: success
+[INFO] Run name: 20260721_202351
+[INFO] Depth events: 2919
+[INFO] Trade events: 3264
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 18/36
+================================================================================
+[INFO] Run 18 status: success
+[INFO] Run name: 20260721_202904
+[INFO] Depth events: 2932
+[INFO] Trade events: 6121
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 19/36
+================================================================================
+[INFO] Run 19 status: success
+[INFO] Run name: 20260721_203418
+[INFO] Depth events: 2932
+[INFO] Trade events: 4735
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 20/36
+================================================================================
+[INFO] Run 20 status: success
+[INFO] Run name: 20260721_203930
+[INFO] Depth events: 2932
+[INFO] Trade events: 5496
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 21/36
+================================================================================
+[INFO] Run 21 status: success
+[INFO] Run name: 20260721_204442
+[INFO] Depth events: 2933
+[INFO] Trade events: 4010
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 22/36
+================================================================================
+[INFO] Run 22 status: success
+[INFO] Run name: 20260721_204958
+[INFO] Depth events: 2932
+[INFO] Trade events: 3500
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 23/36
+================================================================================
+[INFO] Run 23 status: success
+[INFO] Run name: 20260721_205512
+[INFO] Depth events: 2932
+[INFO] Trade events: 3421
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 24/36
+================================================================================
+[INFO] Run 24 status: success
+[INFO] Run name: 20260721_210025
+[INFO] Depth events: 2932
+[INFO] Trade events: 4923
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 25/36
+================================================================================
+[INFO] Run 25 status: success
+[INFO] Run name: 20260721_210540
+[INFO] Depth events: 2932
+[INFO] Trade events: 3621
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 26/36
+================================================================================
+[INFO] Run 26 status: success
+[INFO] Run name: 20260721_211053
+[INFO] Depth events: 2931
+[INFO] Trade events: 2580
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 27/36
+================================================================================
+[INFO] Run 27 status: success
+[INFO] Run name: 20260721_211607
+[INFO] Depth events: 2932
+[INFO] Trade events: 2540
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 28/36
+================================================================================
+[INFO] Run 28 status: success
+[INFO] Run name: 20260721_212121
+[INFO] Depth events: 2931
+[INFO] Trade events: 2727
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 29/36
+================================================================================
+[INFO] Run 29 status: success
+[INFO] Run name: 20260721_212635
+[INFO] Depth events: 2932
+[INFO] Trade events: 4482
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 30/36
+================================================================================
+[INFO] Run 30 status: success
+[INFO] Run name: 20260721_213148
+[INFO] Depth events: 2933
+[INFO] Trade events: 3306
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 31/36
+================================================================================
+[INFO] Run 31 status: success
+[INFO] Run name: 20260721_213700
+[INFO] Depth events: 2931
+[INFO] Trade events: 2809
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 32/36
+================================================================================
+[INFO] Run 32 status: success
+[INFO] Run name: 20260721_214214
+[INFO] Depth events: 2932
+[INFO] Trade events: 2942
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 33/36
+================================================================================
+[INFO] Run 33 status: success
+[INFO] Run name: 20260721_214726
+[INFO] Depth events: 2930
+[INFO] Trade events: 3428
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 34/36
+================================================================================
+[INFO] Run 34 status: success
+[INFO] Run name: 20260721_215241
+[INFO] Depth events: 2931
+[INFO] Trade events: 2830
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 35/36
+================================================================================
+[INFO] Run 35 status: success
+[INFO] Run name: 20260721_215753
+[INFO] Depth events: 2933
+[INFO] Trade events: 2044
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Pausing 5 seconds before next run...
+
+================================================================================
+[INFO] Starting run 36/36
+================================================================================
+[INFO] Run 36 status: success
+[INFO] Run name: 20260721_220308
+[INFO] Depth events: 2932
+[INFO] Trade events: 3020
+[INFO] Saved collection log to: reports\tables\fresh_trade_collection_log.csv
+[INFO] Restored original config.yaml
+
+================================================================================
+[INFO] Batch collection summary
+================================================================================
+    run_number   status  ... trade_events  collection_seconds_requested
+0            1  success  ...        10802                           300
+1            2  success  ...        13913                           300
+2            3  success  ...         7632                           300
+3            4  success  ...         8286                           300
+4            5  success  ...        10693                           300
+5            6  success  ...         6913                           300
+6            7  success  ...         6157                           300
+7            8  success  ...         5149                           300
+8            9  success  ...         5993                           300
+9           10  success  ...         6891                           300
+10          11  success  ...         3463                           300
+11          12  success  ...         6339                           300
+12          13  success  ...         6910                           300
+13          14  success  ...         5645                           300
+14          15  success  ...         4945                           300
+15          16  success  ...         4781                           300
+16          17  success  ...         3264                           300
+17          18  success  ...         6121                           300
+18          19  success  ...         4735                           300
+19          20  success  ...         5496                           300
+20          21  success  ...         4010                           300
+21          22  success  ...         3500                           300
+22          23  success  ...         3421                           300
+23          24  success  ...         4923                           300
+24          25  success  ...         3621                           300
+25          26  success  ...         2580                           300
+26          27  success  ...         2540                           300
+27          28  success  ...         2727                           300
+28          29  success  ...         4482                           300
+29          30  success  ...         3306                           300
+30          31  success  ...         2809                           300
+31          32  success  ...         2942                           300
+32          33  success  ...         3428                           300
+33          34  success  ...         2830                           300
+34          35  success  ...         2044                           300
+35          36  success  ...         3020                           300
+
+[36 rows x 6 columns]
+
+[INFO] Success count: 36
+[INFO] Failed count: 0
+[INFO] Total depth events: 105527
+[INFO] Total trade events: 186311
+[INFO] Average depth events per successful run: 2931.31
+[INFO] Average trade events per successful run: 5175.31
+
+[INFO] Multi-run trade collection completed.
+[END] 21.07.2026 22:08:17,93 exit_code=0 
+================================================== 
