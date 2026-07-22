@@ -24,6 +24,15 @@ No model predictions or PnL were inspected during collection.
 - min_trade_events: 2044.00
 - max_trade_events: 13913.00
 
+
+## Timing
+
+- First run started: `2026-07-21T14:00:00.873128+00:00`
+- Last run started: `2026-07-21T17:03:08.072821+00:00`
+- Estimated final run completion: approximately `2026-07-21T17:08:08+00:00`
+- The nominal 14:00–17:00 UTC window was exceeded by approximately eight minutes because of deterministic setup intervals between the 36 sequential five-minute runs.
+- All 36 runs were retained because the run count and duration were preregistered before collection; no run was added or removed based on market conditions or model outcomes.
+
 ## Research boundary
 
 Only technical collection metadata were inspected on Day 44.

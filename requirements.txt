@@ -5,4 +5,4 @@ pandas
 matplotlib
 scikit-learn
 xgboost
-lightgbm
+lightgbmtabulate==0.10.0

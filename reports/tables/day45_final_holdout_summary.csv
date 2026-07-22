@@ -1,0 +1,2 @@
+holdout_batch,eligible_runs,n_signals,n_signal_runs,signal_run_coverage,directional_precision,positive_net_signal_share,mean_gross_bps,median_gross_bps,mean_net_bps,median_net_bps,total_net_bps,break_even_cost_bps
+weekday_active_final_holdout_day44,36,37,17,0.4722222222222222,0.6756756756756757,0.35135135135135137,0.7158779792835611,0.5702139727947753,-0.28412202071643894,-0.42978602720522474,-10.512514766508241,0.7158779792835611
